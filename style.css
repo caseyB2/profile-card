@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-content {
+  margin-top: 1rem;
+}
+
+h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:focus {
+  outline: 2px solid #0077cc;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  figure {
+    margin: 0;
+    margin-right: 2rem;
+  }
+
+  .profile-content {
+    flex: 1;
+  }
+}
